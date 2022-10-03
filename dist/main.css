@@ -1,0 +1,17 @@
+:root {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+ul,
+li {
+  padding-left: 0;
+  list-style: none;
+}
+
+body {
+  background-color: red;
+}/*# sourceMappingURL=main.css.map */
