@@ -5,12 +5,30 @@
 
     margin: 2rem 0 0 2rem;
 
+    &__logo {
+        cursor: pointer;
+    }
+
     &__navigation-bar {
         display: flex;
-        background-color: #4d4d4d;
-        opacity: 0.32;
+        justify-content: space-around;
+        background: rgba(103, 103, 103);
+        backdrop-filter: blur(2px);
 
-        padding: 2rem;
+        width: 50vw;
+
         margin: 0;
+        padding-right: 5rem;
+        text-transform: uppercase;
+
+        color: var(--primary-text);
+
+        li {
+            padding: 2rem;
+        }
+
+        .active {
+            border-bottom: 2px solid var(--primary-text);
+        }
     }
 }
