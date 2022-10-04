@@ -61,6 +61,28 @@ li {
   filter: blur(0);
   opacity: 1;
   letter-spacing: 0.15rem;
+  cursor: pointer;
+}
+.header__navigation-bar li:hover {
+  border: 2px solid var(--primary-text);
+  -webkit-animation: slidein 2s ease;
+          animation: slidein 2s ease;
+}
+@-webkit-keyframes slidein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .header__navigation-bar .active {
   border-bottom: 2px solid var(--primary-text);

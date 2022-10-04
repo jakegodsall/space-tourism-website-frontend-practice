@@ -28,6 +28,21 @@
             filter: blur(0);
             opacity: 1;
             letter-spacing: 0.15rem;
+            cursor: pointer;
+        }
+
+        li:hover {
+            border: 2px solid var(--primary-text);
+            animation: slidein 2s ease;
+        }
+
+        @keyframes slidein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         .active {
