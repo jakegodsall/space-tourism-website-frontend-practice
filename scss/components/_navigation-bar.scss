@@ -15,6 +15,7 @@
         width: 100%;
         height: 100%;
         margin: 0;
+        padding-right: 5rem;
 
         text-transform: uppercase;
 
@@ -25,24 +26,47 @@
 
         li {
             padding: 2rem;
+            cursor: pointer;
             filter: blur(0);
             opacity: 1;
-            letter-spacing: 0.15rem;
-            cursor: pointer;
+            letter-spacing: 0.1rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
         }
 
-        li:hover {
-            border: 2px solid var(--primary-text);
-            animation: slidein 2s ease;
+        li::before,
+        li::after {
+            content: '';
+            position: absolute;
+            border: 1px solid var(--primary-text);
+            width: 0%;
+            opacity: 0;
+            transition: all 0.4s ease-in-out;
         }
 
-        @keyframes slidein {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+        li::before {
+            top: 2rem;
+        }
+
+        li::after {
+            bottom: 2rem;
+        }
+
+        li:hover::before,
+        li:hover::after {
+            width: 100%;
+            opacity: 1;
+        }
+
+        li:hover::before {
+            top: 0;
+        }
+
+        li:hover::after {
+            bottom: 0;
         }
 
         .active {

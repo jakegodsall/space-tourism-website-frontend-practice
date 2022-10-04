@@ -51,6 +51,7 @@ li {
   width: 100%;
   height: 100%;
   margin: 0;
+  padding-right: 5rem;
   text-transform: uppercase;
   width: 65vw;
   background: rgba(78, 78, 95, 0.3);
@@ -58,31 +59,40 @@ li {
 }
 .header__navigation-bar li {
   padding: 2rem;
+  cursor: pointer;
   filter: blur(0);
   opacity: 1;
-  letter-spacing: 0.15rem;
-  cursor: pointer;
+  letter-spacing: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
-.header__navigation-bar li:hover {
-  border: 2px solid var(--primary-text);
-  -webkit-animation: slidein 2s ease;
-          animation: slidein 2s ease;
+.header__navigation-bar li::before,
+.header__navigation-bar li::after {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--primary-text);
+  width: 0%;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
 }
-@-webkit-keyframes slidein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.header__navigation-bar li::before {
+  top: 2rem;
 }
-@keyframes slidein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.header__navigation-bar li::after {
+  bottom: 2rem;
+}
+.header__navigation-bar li:hover::before,
+.header__navigation-bar li:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+.header__navigation-bar li:hover::before {
+  top: 0;
+}
+.header__navigation-bar li:hover::after {
+  bottom: 0;
 }
 .header__navigation-bar .active {
   border-bottom: 2px solid var(--primary-text);
