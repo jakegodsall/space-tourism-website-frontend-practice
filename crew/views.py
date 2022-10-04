@@ -1,3 +1,17 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def commander(response):
+    ...
+
+
+def engineer(response):
+    ...
+
+
+def pilot(response):
+    ...
+
+
+def specialist(response):
+    ...
