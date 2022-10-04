@@ -67,6 +67,7 @@ li {
   flex-direction: column;
   align-items: center;
   position: relative;
+  transition: border 0 ease-out 1s;
 }
 .header__navigation-bar li::before,
 .header__navigation-bar li::after {
@@ -82,6 +83,9 @@ li {
 }
 .header__navigation-bar li::after {
   bottom: 2rem;
+}
+.header__navigation-bar li:hover {
+  border: 0;
 }
 .header__navigation-bar li:hover::before,
 .header__navigation-bar li:hover::after {
