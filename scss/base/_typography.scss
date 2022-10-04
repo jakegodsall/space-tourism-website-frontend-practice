@@ -1,6 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700&family=Bellefair&display=swap');
 
 :root {
     --primary-font: 'Barlow Condensed', sans-serif;
     --secondary-font: 'Bellefair', serifs;
+
+    --light-weight: 300;
+    --regular-weight: 400;
+    --medium-weight: 500;
+    --bold-weight: 700;
+}
+
+.strong {
+    font-weight: var(--medium-weight);
 }
