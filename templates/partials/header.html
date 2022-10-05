@@ -4,10 +4,10 @@
     <img class="header__logo" src="" alt="logo" />
     <nav>
         <ul class="header__navigation-bar">
-            <li class="active">00 Home</li>
-            <li>01 Destination</li>
-            <li>02 Crew</li>
-            <li>03 Technology</li>
+            <li class="active"><a href="">00 Home</a></li>
+            <li><a href="{% url 'destination' %}">01 Destination</a></li>
+            <li><a href="{% url 'crew' %}">02 Crew</a></li>
+            <li><a href="{% url 'technology' %}">03 Technology</a></li>
         </ul>
     </nav>
 </header>

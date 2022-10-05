@@ -1,17 +1,21 @@
 from django.shortcuts import render
 
 
-def commander(response):
+def index(request):
     ...
 
 
-def engineer(response):
+def commander(request):
     ...
 
 
-def pilot(response):
+def engineer(request):
     ...
 
 
-def specialist(response):
+def pilot(request):
+    ...
+
+
+def specialist(request):
     ...

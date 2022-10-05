@@ -2,17 +2,21 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def europa(response):
+def index(request):
     ...
 
 
-def mars(response):
+def europa(request):
     ...
 
 
-def moon(response):
+def mars(request):
     ...
 
 
-def titan(response):
+def moon(request):
+    ...
+
+
+def titan(request):
     ...

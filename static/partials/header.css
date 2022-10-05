@@ -28,7 +28,7 @@
 
 .header__navigation-bar li {
     padding: 2rem;
-    cursor: pointer;
+    /* cursor: pointer; */
     filter: blur(0);
     opacity: 1;
     letter-spacing: 0.1rem;
@@ -82,4 +82,11 @@
 
 .number-list {
     margin-right: 0.5rem;
+}
+
+a,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
 }

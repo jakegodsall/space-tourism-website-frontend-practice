@@ -4,13 +4,17 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def capsule(response):
+def index(request):
     ...
 
 
-def spaceport(response):
+def capsule(request):
     ...
 
 
-def vehicle(response):
+def spaceport(request):
+    ...
+
+
+def vehicle(request):
     ...
