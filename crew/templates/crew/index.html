@@ -1,6 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title_block %}
     Home
 {% endblock %}
 
+{% block styles_block %}
+    <link rel="stylesheet" href="{% static 'crew/index' %}">
+    <link rel="stylesheet" href="{% static 'partials/header.css' %}">
+{% endblock %}
+
+
+{% block content_block %}
+    {% include 'partials/header.html' %}
+{% endblock %}

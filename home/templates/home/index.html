@@ -1,6 +1,17 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title_block %}
     Home
 {% endblock %}
 
+{% block styles_block %}
+    <link rel="stylesheet" href="{% static 'home/index.css' %}">
+    <link rel="stylesheet" href="{% static 'partials/header.css' %}">
+{% endblock %}
+
+{% block content_block %}
+    <div class="container home">
+        {% include 'partials/header.html' %}
+    </div>
+{% endblock %}
