@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700&family=Bellefair&display=swap');
 
 :root {
+    box-sizing: border-box;
+    --primary-text: #fffffe;
+    --secondary-text: #646675;
+
     --primary-font: 'Barlow Condensed', sans-serif;
     --secondary-font: 'Bellefair', serifs;
 
@@ -13,4 +17,19 @@
 
 .strong {
     font-weight: var(--medium-weight);
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+ul,
+li {
+    padding-left: 0;
+    list-style: none;
 }
