@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    ...
+    return render(request, 'destination/index.html')
 
 
 def europa(request):

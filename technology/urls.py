@@ -4,7 +4,7 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='technology'),
-    path('/capsule', views.capsule),
-    path('/spaceport', views.spaceport),
-    path('/vehicle', views.vehicle)
+    path('capsule', views.capsule),
+    path('spaceport', views.spaceport),
+    path('vehicle', views.vehicle)
 ]
