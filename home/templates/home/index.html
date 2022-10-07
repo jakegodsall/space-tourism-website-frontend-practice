@@ -5,13 +5,24 @@
     Home
 {% endblock %}
 
+{% block body_block %}home{% endblock %}
+
 {% block styles_block %}
     <link rel="stylesheet" href="{% static 'home/index.css' %}">
     <link rel="stylesheet" href="{% static 'partials/header.css' %}">
 {% endblock %}
 
 {% block content_block %}
-    <div class="container home">
-        {% include 'partials/header.html' %}
+    {% include 'partials/header.html' %}
+    <div class="container">
+        <div class="container__main-text">
+            <p class="title">So, you want to travel to <span>space</span></p>
+            <p class="main-text">Let's face it; if you want to go to space, you might as well genuinly
+                go to outer space and not hover kind of on the edge of it. Well sit back,
+                and relax because we'll give you a truly out of this world experience!
+        </div>
+        <div class="container__button">
+            <a href=""><button>Explore</button></a>
+        </div>
     </div>
 {% endblock %}
