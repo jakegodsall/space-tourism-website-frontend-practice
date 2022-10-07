@@ -1,0 +1,8 @@
+.destination {
+    height: 100vh;
+    background-image: url('/static/destination/images/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    color: var(--primary-text);
+}

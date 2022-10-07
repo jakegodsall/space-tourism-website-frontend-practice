@@ -1,0 +1,62 @@
+.grid {
+    margin-top: 5rem;
+    padding-inline: 0 auto;
+    width: 80%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+
+    color: var(--primary-text-color);
+}
+
+nav {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    position: relative;
+}
+
+nav a {
+    margin-right: 1.5rem;
+}
+
+.active {
+    border-bottom: 2px solid var(--primary-text);
+}
+
+.title {
+    font-size: 6rem;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.information {
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+    line-height: 1.4;
+}
+
+.facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid grey;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+
+.facts p {
+    margin: 0;
+    letter-spacing: 0.2rem;
+    font-size: 0.7rem;
+}
+
+.facts p:nth-child(3),
+.facts p:nth-child(4) {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+    letter-spacing: 0;
+}

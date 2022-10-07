@@ -1,15 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block body_block %}destination{% endblock %}
+
 {% block title_block %}
     Home
 {% endblock %}
 
-{% block content_block %}
-    {% include 'partials/header.html' %}
-{% endblock %}
-
 {% block styles_block %}
-    <link rel="stylesheet" href="{% static 'destination/index' %}">
+    <link rel="stylesheet" href="{% static 'destination/index.css' %}">
+    <link rel="stylesheet" href="{% static 'destination/partials/destination.css' %}">
     <link rel="stylesheet" href="{% static 'partials/header.css' %}">
 {% endblock %}
+
+{% block content_block %}
+    {% include 'partials/header.html' %}
+    
+    {% include 'destination/partials/destination.html' %}
+    
+    
+{% endblock %}
+
