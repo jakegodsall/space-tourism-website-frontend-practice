@@ -3,11 +3,11 @@
 
 :root {
     box-sizing: border-box;
-    --primary-text: #fffffe;
-    --secondary-text: #646675;
+    --primary-text-color: #fffffe;
+    --secondary-text-color: #cbd2f4;
 
     --primary-font: 'Barlow Condensed', sans-serif;
-    --secondary-font: 'Bellefair', serifs;
+    --secondary-font: 'Bellefair', serif;
 
     --light-weight: 300;
     --regular-weight: 400;
