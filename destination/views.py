@@ -18,3 +18,19 @@ def index(request):
         'europa': europa,
         'titan': titan
     })
+
+
+def europa(request):
+    ...
+
+
+def mars(request):
+    ...
+
+
+def moon(request):
+    ...
+
+
+def titan(request):
+    ...
