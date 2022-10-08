@@ -1,6 +1,8 @@
 .grid {
+    margin-inline: 0 auto;
     margin-top: 5rem;
-    padding-inline: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
 
     display: grid;
