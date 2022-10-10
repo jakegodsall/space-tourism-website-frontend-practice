@@ -1,21 +1,22 @@
 {% load static %}
+{% comment %} {% static 'destination/images/image-mars.png' %} {% endcomment %}
 
 <div class="grid">
-    <img src="{% static 'destination/images/image-europa.png' %}" alt="Planet" />
+    <img src="{% static "destination/images/" %}{{ image }}" alt="Planet" />
     <div class="main__content">
         <nav>
-            <a href="">Moon</a>
-            <a href="">Mars</a>
-            <a href="" class="active">Europa</a>
-            <a href="">Titan</a>
+            <a href="{% url 'moon' %}">Moon</a>
+            <a href="{% url 'mars' %}">Mars</a>
+            <a href="{% url 'europa' %}" class="active">Europa</a>
+            <a href="{% url 'titan' %}">Titan</a>
         </nav>
-        <p class="title">Europa</p>
-        <p class="information">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+        <p class="title">{{ name }}</p>
+        <p class="information">{{ description }}</p>
         <div class="facts">
             <p>Avg. distance</p>
             <p>est. travel time</p>
-            <p>628 mil. km</p>
-            <p>3 years</p>
+            <p>{{ distance }}</p>
+            <p>{{ travel }}</p>
         </div>
 
     </div>
