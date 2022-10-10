@@ -1,0 +1,24 @@
+.crew__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 3rem;
+}
+
+.crew__col1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.crew__title {
+    text-transform: uppercase;
+}
+
+.crew__role,
+.crew__member {
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+}
+
+.crew__col2 {
+}
