@@ -1,16 +1,14 @@
+
 {% load static %}
 
 <header class="header">
     <a href="{% url 'home' %}">
          <img class="header__logo" src="{% static '/images/logo.svg' %}" alt="logo" />
     </a>
-   
-    <nav>
-        <ul class="header__navigation-bar">
-            <li class="active"><a href="{% url 'home' %}">00 Home</a></li>
-            <li><a href="{% url 'destination' %}">01 Destination</a></li>
-            <li><a href="{% url 'crew' %}">02 Crew</a></li>
-            <li><a href="{% url 'technology' %}">03 Technology</a></li>
-        </ul>
+    <nav class="header__navigation-bar">
+            <a class="active" href="{% url 'home' %}">00 Home</a>
+            <a href="{% url 'destination' %}">01 Destination</a>
+            <a href="{% url 'crew' %}">02 Crew</a>
+            <a href="{% url 'technology' %}">03 Technology</a>
     </nav>
 </header>

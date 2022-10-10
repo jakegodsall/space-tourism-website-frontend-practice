@@ -26,7 +26,7 @@
     color: var(--primary-text-color);
 }
 
-.header__navigation-bar li {
+.header__navigation-bar a {
     padding: 2rem;
     /* cursor: pointer; */
     filter: blur(0);
@@ -40,8 +40,8 @@
     transition: border 0 ease-out 1s;
 }
 
-.header__navigation-bar li::before,
-.header__navigation-bar li::after {
+.header__navigation-bar a::before,
+.header__navigation-bar a::after {
     content: '';
     position: absolute;
     border: 1px solid var(--primary-text-color);
@@ -50,33 +50,33 @@
     transition: all 0.4s ease-in-out;
 }
 
-.header__navigation-bar li::before {
+.header__navigation-bar a::before {
     top: 2rem;
 }
 
-.header__navigation-bar li::after {
+.header__navigation-bar a::after {
     bottom: 2rem;
 }
 
-.header__navigation-bar li:hover {
+.header__navigation-bar a:hover {
     border: 0;
 }
 
-.header__navigation-bar li:hover::before,
-.header__navigation-bar li:hover::after {
+.header__navigation-bar a:hover::before,
+.header__navigation-bar a:hover::after {
     width: 100%;
     opacity: 1;
 }
 
-.header__navigation-bar li:hover::before {
+.header__navigation-bar a:hover::before {
     top: 0;
 }
 
-.header__navigation-bar li:hover::after {
+.header__navigation-bar a:hover::after {
     bottom: 0;
 }
 
-.active {
+.header__navigation-bar .active {
     border-bottom: 2px solid var(--primary-text);
 }
 
