@@ -54,7 +54,7 @@
     display: inline;
     border: none;
     padding: 0;
-    width: 40%;
+    width: 150px;
     display: flex;
     justify-content: space-between;
 }
@@ -65,6 +65,13 @@
     border-radius: 50%;
     border: none;
     background-color: var(--grey-text-color);
+    position: absolute;
+    bottom: 5rem;
+    cursor: pointer;
+}
+
+.crew__selector .active {
+    background-color: #fff;
 }
 
 .crew__image {

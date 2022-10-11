@@ -9,10 +9,18 @@
         <p class="crew__main-text">{{ bio }}</p>
 
         <fieldset class="crew__selector">
-            <a href="{% url 'commander' %}"><button></button></a>
-            <a href="{% url 'engineer' %}"><button></button></a>
-            <a href="{% url 'pilot' %}"><button></button></a>
-            <a href="{% url 'specialist' %}"><button></button></a>
+            <a href="{% url 'commander' %}"><button 
+                {% if role == 'Commander' %}class="active"{% endif %}
+                ></button></a>
+            <a href="{% url 'engineer' %}"><button
+                {% if role == 'Flight Engineer' %}class="active"{% endif %}
+                ></button></a>
+            <a href="{% url 'pilot' %}"><button
+                {% if role == 'Pilot' %}class="active"{% endif %}
+                ></button></a>
+            <a href="{% url 'specialist' %}"><button
+                {% if role == 'Mission Specialist' %}class="active"{% endif %}
+                ></button></a>
         </fieldset>
     </div>
     <div class="crew__col2">
