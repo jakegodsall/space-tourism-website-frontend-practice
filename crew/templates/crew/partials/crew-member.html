@@ -4,12 +4,9 @@
     <div class="crew__col1">
         <h3 class="crew__title"><span class="crew__number">02</span> meet your crew</h3>
 
-        <h2 class="crew__role">Commander</h2>
-        <h1 class="crew__member">Douglas Hurley</h1>
-        <p class="crew__main-text">
-            Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA
-            astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
-        </p>
+        <h2 class="crew__role">{{ role }}</h2>
+        <h1 class="crew__member">{{ name }}</h1>
+        <p class="crew__main-text">{{ bio }}</p>
 
         <fieldset class="crew__selector">
             <a href="{% url 'commander' %}"><button></button></a>
@@ -21,8 +18,10 @@
     <div class="crew__col2">
         <img
             class="crew__image"
-            src="{% static 'crew/images/image-douglas-hurley.png' %}"
+            src="{% static 'crew/images/' %}{{ image }}"
             alt="Crew member"
         />
     </div>
 </div>
+
+ {% comment %} <img src="{% static "destination/images/" %}{{ image }}" alt="Planet" /> {% endcomment %}

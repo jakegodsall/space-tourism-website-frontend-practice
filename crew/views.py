@@ -18,7 +18,7 @@ def commander(request):
 
 
 def engineer(request):
-    engineer = next(c for c in crew if c['role'] == 'Engineer')
+    engineer = next(c for c in crew if c['role'] == 'Flight Engineer')
     return render(request, 'crew/crew-engineer.html', {
         'member': engineer
     })
@@ -32,7 +32,7 @@ def pilot(request):
 
 
 def specialist(request):
-    specialist = next(c for c in crew if c['role'] == 'Specialist')
+    specialist = next(c for c in crew if c['role'] == 'Mission Specialist')
     return render(request, 'crew/crew-specialist.html', {
         'member': specialist
     })

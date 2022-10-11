@@ -15,6 +15,5 @@
 
 {% block content_block %}
     {% include 'partials/header.html' %}
-    {% include 'crew/partials/crew-member.html' %}
+    {% include 'crew/partials/crew-member.html' with role=member.role name=member.name bio=member.bio image=member.images.png %}
 {% endblock %}
-
