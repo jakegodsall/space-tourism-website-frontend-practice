@@ -5,6 +5,7 @@
     box-sizing: border-box;
     --primary-text-color: #fffffe;
     --secondary-text-color: #cbd2f4;
+    --grey-text-color: #737578;
 
     --primary-font: 'Barlow Condensed', sans-serif;
     --secondary-font: 'Bellefair', serif;
