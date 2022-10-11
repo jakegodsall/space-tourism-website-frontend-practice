@@ -30,3 +30,5 @@ media
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+technology/__pycache__/urls.cpython-310.pyc
+.gitignore

@@ -14,20 +14,20 @@ def index(request):
 
 def vehicle(request):
     vehicle = next(t for t in technology if t['name'] == 'Launch vehicle')
-    return render(request, 'technology/technology-vehicle.html' {
+    return render(request, 'technology/technology-vehicle.html', {
         'tech': vehicle
     })
 
 
 def capsule(request):
     capsule = next(t for t in technology if t['name'] == 'Space capsule')
-    return render(request, 'technology/technology-capsule.html' {
+    return render(request, 'technology/technology-capsule.html', {
         'tech': capsule
     })
 
 
 def spaceport(request):
     spaceport = next(t for t in technology if t['name'] == 'Spaceport')
-    return render(request, 'technology/technology-spaceport.html' {
+    return render(request, 'technology/technology-spaceport.html', {
         'tech': spaceport
     })
