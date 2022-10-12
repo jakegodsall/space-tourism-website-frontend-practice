@@ -3,7 +3,7 @@
 
 <div class="grid">
     <img src="{% static "destination/images/" %}{{ image }}" alt="Planet" />
-    <div class="main__content">
+    <div class="main-content">
         <nav class="destinations">
             <a {% if name == 'Moon'%}class="active"{% endif %}
             href="{% url 'moon' %}">Moon</a>

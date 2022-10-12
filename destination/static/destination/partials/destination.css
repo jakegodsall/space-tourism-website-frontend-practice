@@ -1,13 +1,15 @@
 .grid {
     margin-inline: 0 auto;
-    margin-top: 5rem;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70vh;
     gap: 5rem;
+    justify-content: center;
+    align-items: center;
 
     color: var(--primary-text-color);
 }
@@ -31,6 +33,7 @@ nav {
 }
 
 .information {
+    height: 3rem;
     font-size: 1.1rem;
     color: var(--secondary-text-color);
     line-height: 1.4;
