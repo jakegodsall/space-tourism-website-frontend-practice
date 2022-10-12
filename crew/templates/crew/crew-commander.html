@@ -4,7 +4,7 @@
 {% block body_block %}crew{% endblock %}
 
 {% block title_block %}
-    Crew
+    {{ member.role }}
 {% endblock %}
 
 {% block styles_block %}
@@ -15,5 +15,5 @@
 
 {% block content_block %}
     {% include 'partials/header.html' %}
-    {% include 'crew/partials/crew-member.html' with role=member.role name=member.name bio=member.bio image=member.images.png %}
+    {% include 'crew/partials/crew-member.html' with role=member.role name=member.name bio=member.bio image=member.image %}
 {% endblock %}
