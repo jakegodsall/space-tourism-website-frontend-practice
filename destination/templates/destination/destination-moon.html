@@ -4,7 +4,7 @@
 {% block body_block %}destination{% endblock %}
 
 {% block title_block %}
-    Home
+    {{ destination.name|title }}
 {% endblock %}
 
 {% block styles_block %}
@@ -16,8 +16,7 @@
 {% block content_block %}
     {% include 'partials/header.html' %}
     
-    {% include 'destination/partials/destination.html' with name=destination.name image=destination.images.png description=destination.description distance=destination.distance travel=destination.travel %}
+    {% include 'destination/partials/destination.html' with name=destination.name image=destination.image description=destination.description distance=destination.distance travel=destination.travel %}
     
     
 {% endblock %}
-

@@ -1,11 +1,6 @@
 from django.shortcuts import redirect, render
-from django.urls import reverse
-from django.http import HttpResponse
-import json
 
-with open('data.json') as json_data:
-    data = json.load(json_data)
-    destinations = data['destinations']
+from .models import Destination
 
 
 def index(request):
@@ -13,28 +8,28 @@ def index(request):
 
 
 def europa(request):
-    europa = next(d for d in destinations if d["name"] == "Europa")
+    europa = Destination.objects.get(name='europa')
     return render(request, 'destination/destination-europa.html', {
         'destination': europa
     })
 
 
 def mars(request):
-    mars = next(d for d in destinations if d["name"] == "Mars")
+    mars = Destination.objects.get(name='mars')
     return render(request, 'destination/destination-mars.html', {
         'destination': mars
     })
 
 
 def moon(request):
-    moon = next(d for d in destinations if d["name"] == "Moon")
+    moon = Destination.objects.get(name='moon')
     return render(request, 'destination/destination-moon.html', {
         'destination': moon
     })
 
 
 def titan(request):
-    titan = next(d for d in destinations if d["name"] == "Titan")
+    titan = Destination.objects.get(name='titan')
     return render(request, 'destination/destination-titan.html', {
         'destination': titan
     })
