@@ -2,7 +2,7 @@
 {% comment %} {% static 'destination/images/image-mars.png' %} {% endcomment %}
 
 <div class="grid">
-    <img src="{% static "destination/images/" %}{{ image }}" alt="Planet" />
+    <img class="planet" src="{% static "destination/images/" %}{{ image }}" alt="Planet" />
     <div class="main-content">
         <nav class="destinations">
             <a {% if name == 'Moon'%}class="active"{% endif %}
