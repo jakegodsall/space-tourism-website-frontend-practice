@@ -4,7 +4,7 @@
 {% block body_block %}technology{% endblock %}
 
 {% block title_block %}
-    Technology
+    {{ technology.name|title }}
 {% endblock %}
 
 {% block styles_block %}
@@ -15,4 +15,5 @@
 
 {% block content_block %}
     {% include 'partials/header.html' %}
+    {% include 'technology/partials/tech.html' with name=technology.name description=technology.description image=technology.image %}
 {% endblock %}

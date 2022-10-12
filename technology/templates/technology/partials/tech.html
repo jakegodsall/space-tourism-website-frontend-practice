@@ -1,0 +1,13 @@
+{% load static %}
+
+<div class="tech__grid">
+    <div class="tech__col1"></div>
+    <div class="tech__col2">
+        <p>the technology</p>
+        <h2>{{ name }}</h2>
+        <p>{{ description }}</p>
+    </div>
+    <div class="tech__col3">
+         <img src="{% static "technology/images/" %}{{ image }}" alt="" />
+    </div>
+</div>

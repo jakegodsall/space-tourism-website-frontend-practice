@@ -1,11 +1,8 @@
 from django.shortcuts import render, redirect
-import json
+
+from .models import Technology
 
 # Create your views here.
-
-with open('data.json', 'r') as json_object:
-    data = json.load(json_object)
-    technology = data['technology']
 
 
 def index(request):
@@ -13,21 +10,21 @@ def index(request):
 
 
 def vehicle(request):
-    vehicle = next(t for t in technology if t['name'] == 'Launch vehicle')
+    vehicle = Technology.objects.get(name='launch vehicle')
     return render(request, 'technology/technology-vehicle.html', {
-        'tech': vehicle
+        'technology': vehicle
     })
 
 
 def capsule(request):
-    capsule = next(t for t in technology if t['name'] == 'Space capsule')
+    capsule = Technology.objects.get(name='space capsule')
     return render(request, 'technology/technology-capsule.html', {
-        'tech': capsule
+        'technology': capsule
     })
 
 
 def spaceport(request):
-    spaceport = next(t for t in technology if t['name'] == 'Spaceport')
+    spaceport = Technology.objects.get(name='spaceport')
     return render(request, 'technology/technology-spaceport.html', {
-        'tech': spaceport
+        'technology': spaceport
     })
