@@ -26,6 +26,15 @@
     color: var(--primary-text-color);
 }
 
+.header__navigation-bar ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-right: 4rem;
+}
+
 .header__navigation-bar a {
     padding: 2rem;
     /* cursor: pointer; */
@@ -77,7 +86,7 @@
 }
 
 .header__navigation-bar .active {
-    border-bottom: 2px solid var(--primary-text);
+    border-bottom: 2px solid var(--primary-text-color);
 }
 
 .number-list {
@@ -98,4 +107,78 @@ a:active {
     width: 35%;
     display: block;
     left: 10rem;
+}
+
+/* Hamburger */
+
+.header__toggle {
+    position: absolute;
+    right: 0.8rem;
+    z-index: 1;
+    width: 2rem;
+    height: 3rem;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.header__hamburger {
+    /* background-color: red; */
+    width: 2rem;
+    height: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    margin-right: 1rem;
+}
+
+.header__hamburger > div {
+    height: 3px;
+    width: 100%;
+    background-color: var(--secondary-text-color);
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Styles to top and bottom lines of hamburger */
+.header__hamburger > div::before,
+.header__hamburger > div::after {
+    --burger-spacing: 0.7rem;
+
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: var(--secondary-text-color);
+}
+
+.header__hamburger > div::before {
+    top: var(--burger-spacing);
+}
+
+.header__hamburger > div::after {
+    bottom: var(--burger-spacing);
+}
+
+/* Animate toggler */
+.header__toggle:checked + .header__hamburger > div {
+    transform: rotate(135deg);
+}
+
+/* Turn lines into X */
+.header__toggle:checked + .header__hamburger > div::before,
+.header__toggle:checked + .header__hamburger > div::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 600px) {
+    .header__navigation-bar {
+        display: none;
+    }
+
+    .header__hamburger {
+    }
 }

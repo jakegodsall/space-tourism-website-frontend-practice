@@ -1,29 +1,35 @@
 {% load static %}
 
 <div class="tech__grid">
-    <div class="tech__col1">
-        <a href="{% url 'vehicle' %}">
-            <button
-                {% if name == 'launch vehicle' %}
-                class="active"
-                {% endif %}
-            >1</button>
-        </a>
-        <a href="{% url 'capsule' %}">
-            <button
-                {% if name == 'space capsule' %}
-                class="active"
-                {% endif %}
-            >2</button>
-        </a>
-        <a href="{% url 'spaceport' %}">
-            <button
-                {% if name == 'spaceport' %}
-                class="active"
-                {% endif %}
-            >3</button>
-        </a>
-    </div>
+    <nav class="tech__col1">
+        <button
+            {% if name == 'launch vehicle' %}
+            class="active"
+            {% endif %}
+        >
+            <a href="{% url 'vehicle' %}">
+                1
+            </a>
+        </button>
+        <button
+            {% if name == 'space capsule' %}
+            class="active"
+            {% endif %}
+        >
+            <a href="{% url 'capsule' %}">
+                2
+            </a>
+        </button>
+        <button
+            {% if name == 'spaceport' %}
+            class="active"
+            {% endif %}
+        >
+            <a href="{% url 'spaceport' %}">
+                3
+            </a>
+        </button>
+    </nav>
     <div class="tech__col2">
         <p class="tech__terms">the terminology...</p>
         <h2 class="tech__name">{{ name }}</h2>
