@@ -109,17 +109,7 @@ a:active {
     left: 10rem;
 }
 
-/* Hamburger */
-
-.header__toggle {
-    position: absolute;
-    right: 0.8rem;
-    z-index: 1;
-    width: 2rem;
-    height: 3rem;
-    cursor: pointer;
-    opacity: 0;
-}
+/* HAMBURGER BUTTON */
 
 .header__hamburger {
     /* background-color: red; */
@@ -133,6 +123,7 @@ a:active {
 
     position: relative;
     margin-right: 1rem;
+    z-index: 10;
 }
 
 .header__hamburger > div {
@@ -163,7 +154,7 @@ a:active {
 }
 
 /* Animate toggler */
-.header__toggle:checked + .header__hamburger > div {
+.header__hamburger.opened > div {
     transform: rotate(135deg);
 }
 
@@ -172,6 +163,40 @@ a:active {
 .header__toggle:checked + .header__hamburger > div::after {
     top: 0;
     transform: rotate(90deg);
+}
+
+/* OVERLAY MENU */
+
+.overlay__menu {
+    position: absolute;
+    visibility: hidden;
+    right: 0;
+    top: 0;
+    width: 70vw;
+    height: 100vh;
+    padding: 0;
+    background: rgba(78, 78, 95, 0.8);
+}
+
+.overlay__menu nav {
+}
+
+.overlay__menu ul {
+    margin-left: 2rem;
+    margin-top: 20vh;
+}
+
+.overlay__menu nav ul li {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+.overlay__menu.opened {
+    visibility: visible;
 }
 
 @media screen and (max-width: 600px) {
