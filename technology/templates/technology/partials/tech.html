@@ -1,13 +1,35 @@
 {% load static %}
 
 <div class="tech__grid">
-    <div class="tech__col1"></div>
+    <div class="tech__col1">
+        <a href="{% url 'vehicle' %}">
+            <button
+                {% if name == 'launch vehicle' %}
+                class="active"
+                {% endif %}
+            >1</button>
+        </a>
+        <a href="{% url 'capsule' %}">
+            <button
+                {% if name == 'space capsule' %}
+                class="active"
+                {% endif %}
+            >2</button>
+        </a>
+        <a href="{% url 'spaceport' %}">
+            <button
+                {% if name == 'spaceport' %}
+                class="active"
+                {% endif %}
+            >3</button>
+        </a>
+    </div>
     <div class="tech__col2">
         <p>the technology</p>
         <h2>{{ name }}</h2>
         <p>{{ description }}</p>
     </div>
     <div class="tech__col3">
-        <img src="{% static 'technology/images/' %}{{ image }}" alt="" />
+        <img src="{% static 'technology/images/' %}{{ image }}" alt="{{ name }}" />
     </div>
 </div>

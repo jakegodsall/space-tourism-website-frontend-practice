@@ -1,0 +1,39 @@
+.tech__grid {
+    margin-left: 10vw;
+    display: grid;
+    grid-template-columns: 10vw 40vw 40vw;
+    gap: 5rem;
+}
+
+.tech__col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech__col1 button {
+    width: 5rem;
+    margin: 1rem 0;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 1px solid grey;
+    background-color: transparent;
+
+    color: white;
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+.tech__col1 button.active {
+    background-color: #fff;
+    color: black;
+}
+
+.tech__col2 {
+}
+
+.tech__col3 {
+}
