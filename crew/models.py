@@ -5,6 +5,10 @@ from django.urls import reverse
 
 
 class CrewMember(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Crew Members'
+
     name = models.CharField(max_length=128)
     role = models.CharField(max_length=64)
     bio = models.TextField()

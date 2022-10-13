@@ -5,6 +5,9 @@ from django.urls import reverse
 
 
 class Technology(models.Model):
+    class Meta:
+        verbose_name_plural = ("Technologies")
+
     name = models.CharField(max_length=128)
     description = models.TextField()
     portrait_image = models.CharField(max_length=128)
