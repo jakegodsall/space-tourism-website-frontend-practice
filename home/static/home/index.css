@@ -29,12 +29,12 @@
 	font-size: 1.2rem;
 }
 
-.title {
+.container__main-text .title {
 	text-transform: uppercase;
 	font-size: 1.6rem;
 }
 
-.title span {
+.container__main-text .title span {
 	display: block;
 	margin-top: 2rem;
 	font-family: var(--secondary-font);
@@ -42,7 +42,7 @@
 	font-size: 8rem;
 }
 
-.main-text {
+.container__main-text .main-text {
 	line-height: 1.5;
 }
 
@@ -92,4 +92,19 @@
 
 /* Mobile media query */
 @media screen and (max-width: 500px) {
+	.home {
+		background-image: url('/static/home/images/background-home-mobile.jpg');
+	}
+
+	.container__main-text .title {
+		font-size: 1.3rem;
+	}
+
+	.container__main-text .title span {
+		font-size: 6rem;
+	}
+
+	.container__main-text .main-text {
+		padding-inline: 3.5rem;
+	}
 }
