@@ -59,11 +59,12 @@
 	font-size: 2rem;
 	text-transform: uppercase;
 	color: black;
-	transition: letter-spacing 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .container__button button:hover {
 	letter-spacing: 0.5rem;
+	box-shadow: 0 0 0 3rem rgba(11, 13, 23, 0.2);
 }
 
 /* Tablet media query */
