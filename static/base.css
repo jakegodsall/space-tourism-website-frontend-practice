@@ -16,11 +16,12 @@
     --bold-weight: 700;
 }
 
-.strong {
-    font-weight: var(--medium-weight);
+html {
+    height: 100%;
 }
 
 body {
+    height: 100%;
     font-family: var(--primary-font);
     margin: 0;
 }
@@ -33,4 +34,8 @@ ul,
 li {
     padding-left: 0;
     list-style: none;
+}
+
+.strong {
+    font-weight: var(--medium-weight);
 }
