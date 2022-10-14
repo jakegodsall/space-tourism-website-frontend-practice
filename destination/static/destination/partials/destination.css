@@ -1,79 +1,102 @@
+.choose {
+	color: white;
+	text-transform: uppercase;
+}
+
 .grid {
-    margin-inline: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+	margin-inline: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70vh;
-    gap: 5rem;
-    justify-content: center;
-    align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 70vh;
+	gap: 5rem;
+	justify-content: center;
+	align-items: center;
 
-    color: var(--primary-text-color);
+	color: var(--primary-text-color);
 }
 
 nav {
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    position: relative;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	position: relative;
 }
 
 .destinations a {
-    margin-right: 1.5rem;
+	margin-right: 1.5rem;
 }
 
 .title {
-    font-size: 6rem;
-    font-family: var(--secondary-font);
-    text-transform: uppercase;
-    margin-bottom: 0;
-    margin-top: 2rem;
+	font-size: 6rem;
+	font-family: var(--secondary-font);
+	text-transform: uppercase;
+	margin-bottom: 0;
+	margin-top: 2rem;
 }
 
 .information {
-    height: 3rem;
-    font-size: 1.1rem;
-    color: var(--secondary-text-color);
-    line-height: 1.4;
+	height: 3rem;
+	font-size: 1.1rem;
+	color: var(--secondary-text-color);
+	line-height: 1.4;
 }
 
 .facts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-top: 1px solid grey;
-    margin-top: 3rem;
-    text-transform: uppercase;
-    padding-top: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-top: 1px solid grey;
+	margin-top: 3rem;
+	text-transform: uppercase;
+	padding-top: 1rem;
 }
 
 .facts p {
-    margin: 0;
-    letter-spacing: 0.2rem;
-    font-size: 0.7rem;
+	margin: 0;
+	letter-spacing: 0.2rem;
+	font-size: 0.7rem;
 }
 
 .facts p:nth-child(3),
 .facts p:nth-child(4) {
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
-    font-family: var(--secondary-font);
-    letter-spacing: 0;
+	margin-top: 0.5rem;
+	font-size: 1.5rem;
+	font-family: var(--secondary-font);
+	letter-spacing: 0;
 }
 
 .destinations .active {
-    color: red;
+	color: red;
 }
 
-@media screen and (min-width: 1250px) {
-    .planet {
-        width: min(38vw, 700px);
-    }
-}
-
+/* Very wide screens  */
 @media screen and (min-width: 1900px) {
-    .grid {
-        grid-template-columns: 750px 750px;
-    }
+	.grid {
+		grid-template-columns: 750px 750px;
+	}
+}
+
+/* Normal sized screens */
+@media screen and (min-width: 1250px) {
+	.planet {
+		width: min(38vw, 700px);
+	}
+}
+
+/* Tablet layout */
+@media screen and (max-width: 1000px) {
+	.grid {
+		padding-inline: 5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 3rem;
+	}
+}
+
+/* Mobile layout */
+@media screen and (max-width: 600px) {
 }
