@@ -18,10 +18,15 @@
         <p class="title">{{ name }}</p>
         <p class="information">{{ description }}</p>
         <div class="facts">
-            <p>Avg. distance</p>
-            <p>est. travel time</p>
-            <p>{{ distance }}</p>
-            <p>{{ travel }}</p>
+            <div class="fact facts__distance">
+                <p class="fact__title">Avg. distance</p>
+                <p class="fact__value">{{ distance }}</p>
+            </div>
+            <div class="fact facts__travel">
+                <p class="fact__title">est. travel time</p>
+                <p class="fact__value">{{ travel }}</p>
+            </div>
+            
         </div>
 
     </div>

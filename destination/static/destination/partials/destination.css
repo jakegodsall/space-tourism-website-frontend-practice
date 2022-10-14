@@ -1,6 +1,14 @@
 .choose {
 	color: white;
 	text-transform: uppercase;
+	margin-left: 3rem;
+	font-size: 1.5rem;
+	letter-spacing: 0.2rem;
+}
+
+.choose span {
+	font-weight: bolder;
+	color: var(--grey-text-color);
 }
 
 .grid {
@@ -38,14 +46,14 @@ nav {
 }
 
 .information {
-	height: 3rem;
+	/* height: 3rem; */
 	font-size: 1.1rem;
 	color: var(--secondary-text-color);
 	line-height: 1.4;
 }
 
 .facts {
-	display: grid;
+	display: flex;
 	grid-template-columns: 1fr 1fr;
 	border-top: 1px solid grey;
 	margin-top: 3rem;
@@ -53,18 +61,20 @@ nav {
 	padding-top: 1rem;
 }
 
-.facts p {
-	margin: 0;
-	letter-spacing: 0.2rem;
-	font-size: 0.7rem;
+.fact {
+	margin-right: 4rem;
+	letter-spacing: 0.1rem;
 }
 
-.facts p:nth-child(3),
-.facts p:nth-child(4) {
-	margin-top: 0.5rem;
+.fact__title {
+	color: var(--secondary-text-color);
+	margin-bottom: 0.7rem;
+}
+
+.fact__value {
+	margin: 0;
 	font-size: 1.5rem;
 	font-family: var(--secondary-font);
-	letter-spacing: 0;
 }
 
 .destinations .active {
@@ -88,6 +98,7 @@ nav {
 /* Tablet layout */
 @media screen and (max-width: 1000px) {
 	.grid {
+		margin-top: 3rem;
 		padding-inline: 5rem;
 		display: flex;
 		flex-direction: column;
@@ -95,8 +106,40 @@ nav {
 		text-align: center;
 		gap: 3rem;
 	}
+
+	.information {
+		height: auto;
+	}
+
+	.facts {
+		justify-content: space-around;
+	}
+
+	.fact {
+		margin-right: 0;
+	}
 }
 
 /* Mobile layout */
 @media screen and (max-width: 600px) {
+	.grid {
+		padding: 0;
+	}
+
+	.destinations {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.destinations a {
+		margin: 0;
+	}
+
+	.planet {
+		width: 55vw;
+	}
+
+	.title {
+		font-size: 4rem;
+	}
 }
