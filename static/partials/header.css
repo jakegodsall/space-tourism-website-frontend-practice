@@ -167,8 +167,8 @@ a:active {
 }
 
 /* Turn lines into X */
-.header__toggle:checked + .header__hamburger > div::before,
-.header__toggle:checked + .header__hamburger > div::after {
+.header__hamburger.opened > div::before,
+.header__hamburger.opened > div::after {
     top: 0;
     transform: rotate(90deg);
 }
