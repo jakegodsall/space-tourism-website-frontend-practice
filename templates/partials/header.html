@@ -8,16 +8,32 @@
     <nav class="header__navigation-bar">
         <ul>
             <li>
-                <a class="active" href="{% url 'home' %}">00 Home</a>
+                <a href="{% url 'home' %}">
+                    <div class="header__nav-item">
+                        <span class="header__nav-numbers">00</span> Home
+                    </div>
+                </a>
             </li>
             <li>
-                <a href="{% url 'destination' %}">01 Destination</a>
+                <a href="{% url 'destination' %}">
+                    <div class="header__nav-item">
+                        <span class="header__nav-numbers">01</span> Destination
+                    </div>
+                </a>
             </li>
             <li>
-                <a href="{% url 'crew' %}">02 Crew</a>
+                <a href="{% url 'crew' %}">
+                    <div class="header__nav-item">
+                        <span class="header__nav-numbers">02</span> Crew
+                    </div>
+                </a>
             </li>
             <li>
-                <a href="{% url 'technology' %}">03 Technology</a>
+                <a href="{% url 'technology' %}">
+                    <div class="header__nav-item">
+                        <span class="header__nav-numbers">03</span> Technology
+                    </div>
+                </a>
             </li>
         </ul>
     </nav>
