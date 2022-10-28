@@ -1,7 +1,5 @@
-from django.http import HttpResponse
-from django.template.loader import render_to_string
+from django.shortcuts import render
 
 
 def index(request):
-    homepage = render_to_string('home/index.html')
-    return HttpResponse(homepage)
+    return render(request, 'home/index.html')

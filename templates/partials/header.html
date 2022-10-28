@@ -10,13 +10,13 @@
             <li>
                 <a href="{% url 'home' %}">
                     <div
-                        {% if 'home' in request.path %}
+                        {% if 'home' in request.get_full_path %}
                             class="header__nav-item active"
                         {% else %}
                             class="header__nav-item"
                         {% endif %}
                     >
-                        <span class="header__nav-numbers">00</span> Home
+                        <span class="header__nav-numbers">00</span> Homes
                     </div>
                 </a>
             </li>
