@@ -6,13 +6,13 @@
     <img class="planet" src="{% static 'destination/images/' %}{{ image }}" alt="{{ name }}" />
     <div class="main-content">
         <nav class="destinations">
-            <a {% if name == 'Moon'%}class="active"{% endif %}
+            <a {% if name == 'moon'%}class="active"{% endif %}
             href="{% url 'moon' %}">Moon</a>
-            <a {% if name == 'Mars'%}class="active"{% endif %}
+            <a {% if name == 'mars'%}class="active"{% endif %}
             href="{% url 'mars' %}">Mars</a>
-            <a {% if name == 'Europa'%}class="active"{% endif %}
+            <a {% if name == 'europa'%}class="active"{% endif %}
             href="{% url 'europa' %}">Europa</a>
-            <a {% if name == 'Titan'%}class="active"{% endif %}
+            <a {% if name == 'titan'%}class="active"{% endif %}
             href="{% url 'titan' %}">Titan</a>
         </nav>
         <p class="title">{{ name }}</p>
