@@ -92,7 +92,7 @@
 }
 
 .header__navigation-bar .active {
-    text-decoration: underline;
+    color: red;
 }
 
 .number-list {

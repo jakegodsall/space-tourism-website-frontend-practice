@@ -9,28 +9,52 @@
         <ul>
             <li>
                 <a href="{% url 'home' %}">
-                    <div class="header__nav-item">
+                    <div
+                        {% if 'home' in request.path %}
+                            class="header__nav-item active"
+                        {% else %}
+                            class="header__nav-item"
+                        {% endif %}
+                    >
                         <span class="header__nav-numbers">00</span> Home
                     </div>
                 </a>
             </li>
             <li>
                 <a href="{% url 'destination' %}">
-                    <div class="header__nav-item">
+                    <div 
+                        {% if "destination" in request.path %}
+                            class="header__nav-item active"
+                        {% else %}
+                            class="header__nav-item"
+                        {% endif %}
+                    >
                         <span class="header__nav-numbers">01</span> Destination
                     </div>
                 </a>
             </li>
             <li>
                 <a href="{% url 'crew' %}">
-                    <div class="header__nav-item">
+                    <div
+                        {% if 'crew' in request.path %}
+                            class="header__nav-item active"
+                        {% else %}
+                            class="header__nav-item"
+                        {% endif %}
+                    >
                         <span class="header__nav-numbers">02</span> Crew
                     </div>
                 </a>
             </li>
             <li>
                 <a href="{% url 'technology' %}">
-                    <div class="header__nav-item">
+                    <div
+                        {% if 'technology' in request.path %}
+                            class="header__nav-item active"
+                        {% else %}
+                            class="header__nav-item"
+                        {% endif %}
+                    >
                         <span class="header__nav-numbers">03</span> Technology
                     </div>
                 </a>
