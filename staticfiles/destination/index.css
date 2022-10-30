@@ -1,0 +1,32 @@
+.destination {
+    background: url('/static/destination/images/background-destination-desktop.jpg') no-repeat
+        center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    height: 100%;
+    color: var(--primary-text);
+    display: flex;
+    flex-direction: column;
+}
+
+/* tablet layout */
+@media screen and (max-width: 800px) {
+    .destination {
+        background: url('/static/destination/images/background-destination-tablet.jpg') no-repeat
+            center center fixed;
+        background-size: cover;
+    }
+}
+
+/* mobile layout */
+@media screen and (max-width: 400px) {
+    .destination {
+        background: url('/static/destination/images/background-destination-mobile.jpg') no-repeat
+            center center fixed;
+        background-size: cover;
+    }
+}

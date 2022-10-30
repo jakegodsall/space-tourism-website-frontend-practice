@@ -1,0 +1,154 @@
+.choose {
+    color: white;
+    text-transform: uppercase;
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.choose span {
+    font-weight: bolder;
+    color: var(--grey-text-color);
+}
+
+.grid {
+    margin-bottom: 5rem;
+    margin-inline: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70vh;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--primary-text-color);
+}
+
+nav {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    position: relative;
+}
+
+.destinations a {
+    margin-right: 1.5rem;
+}
+
+.title {
+    font-size: 6rem;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.information {
+    /* height: 3rem; */
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+    line-height: 1.4;
+}
+
+.facts {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid grey;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+
+.fact {
+    margin-right: 4rem;
+    letter-spacing: 0.1rem;
+}
+
+.fact__title {
+    color: var(--secondary-text-color);
+    margin-bottom: 0.7rem;
+}
+
+.fact__value {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+}
+
+.destinations .active {
+    color: red;
+}
+
+/* Very wide screens  */
+@media screen and (min-width: 1900px) {
+    .grid {
+        grid-template-columns: 750px 750px;
+    }
+}
+
+/* Normal sized screens */
+@media screen and (min-width: 1250px) {
+    .planet {
+        width: min(38vw, 700px);
+    }
+}
+
+/* Tablet layout */
+@media screen and (max-width: 1000px) {
+    .grid {
+        margin-top: 3rem;
+        padding-inline: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .information {
+        height: auto;
+    }
+
+    .facts {
+        justify-content: space-around;
+    }
+
+    .fact {
+        margin-right: 0;
+    }
+
+    .main-content {
+        margin-bottom: 3rem;
+    }
+}
+
+/* Mobile layout */
+@media screen and (max-width: 600px) {
+    .grid {
+        padding: 0;
+    }
+
+    .destinations {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .destinations a {
+        margin: 0;
+    }
+
+    .planet {
+        width: 55vw;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .main-content {
+        margin-bottom: 3rem;
+    }
+}

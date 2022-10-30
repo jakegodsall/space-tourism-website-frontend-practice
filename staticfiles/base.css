@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700&family=Bellefair&display=swap');
+
+:root {
+    box-sizing: border-box;
+    --primary-text-color: #fffffe;
+    --secondary-text-color: #cbd2f4;
+    --grey-text-color: #737578;
+
+    --primary-font: 'Barlow Condensed', sans-serif;
+    --secondary-font: 'Bellefair', serif;
+
+    --light-weight: 300;
+    --regular-weight: 400;
+    --medium-weight: 500;
+    --bold-weight: 700;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: var(--primary-font);
+    margin: 0;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+ul,
+li {
+    padding-left: 0;
+    list-style: none;
+}
+
+.strong {
+    font-weight: var(--medium-weight);
+}

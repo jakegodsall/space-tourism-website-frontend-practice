@@ -1,0 +1,124 @@
+.home {
+    /* height: 100vh; */
+    height: 100%;
+    color: var(--primary-text);
+
+    background: url('/static/home/images/background-home-desktop.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20vw;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10rem;
+    max-width: 1000px;
+}
+
+.container__main-text,
+.container__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__main-text {
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+}
+
+.container__main-text .title {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.container__main-text .title span {
+    display: block;
+    margin-top: 2rem;
+    font-family: var(--secondary-font);
+    color: var(--primary-text-color);
+    font-size: 8rem;
+}
+
+.container__main-text .main-text {
+    line-height: 1.5;
+}
+
+.container__button button {
+    --button-dims: 250px;
+
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    width: var(--button-dims);
+    height: var(--button-dims);
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.container__button button:hover {
+    letter-spacing: 0.5rem;
+    box-shadow: 0 0 0 3rem rgba(11, 13, 23, 0.2);
+}
+
+/* Tablet media query */
+@media screen and (max-width: 750px) {
+    .home {
+        background: url('/static/home/images/background-home-tablet.jpg') no-repeat center center
+            fixed;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    .container__main-text {
+        text-align: center;
+        padding-inline: 3rem;
+    }
+
+    .main-text {
+        width: 400px;
+    }
+
+    .container__button {
+        margin-bottom: 5rem;
+    }
+}
+
+/* Mobile media query */
+@media screen and (max-width: 500px) {
+    .home {
+        background: url('/static/home/images/background-home-mobile.jpg') no-repeat center center
+            fixed;
+        background-size: 100% 100%;
+    }
+
+    .container__main-text .title {
+        font-size: 1.3rem;
+    }
+
+    .container__main-text .title span {
+        font-size: 6rem;
+    }
+
+    .container__main-text .main-text {
+        padding-inline: 3.5rem;
+    }
+
+    .container__button {
+        margin-bottom: 5rem;
+    }
+}
