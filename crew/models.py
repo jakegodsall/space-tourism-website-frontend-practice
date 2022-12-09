@@ -12,7 +12,7 @@ class CrewMember(models.Model):
     name = models.CharField(max_length=128)
     role = models.CharField(max_length=64)
     bio = models.TextField()
-    image = models.CharField(max_length=128)
+    image = models.ImageField()
     slug = models.SlugField(default='')
 
     def __str__(self):

@@ -15,6 +15,12 @@
 .DS_Store
 .prettierignore
 
+# virtual environments
+venv/
+
+# Envioronment startup script
+setup.sh
+
 # Django #
 *.log
 *.pot

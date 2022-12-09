@@ -10,8 +10,8 @@ class Technology(models.Model):
 
     name = models.CharField(max_length=128)
     description = models.TextField()
-    portrait_image = models.CharField(max_length=128)
-    landscape_image = models.CharField(max_length=128)
+    portrait_image = models.ImageField()
+    landscape_image = models.ImageField()
     slug = models.SlugField(default='')
 
     def __str__(self):

@@ -9,7 +9,7 @@ class Destination(models.Model):
     description = models.TextField()
     distance = models.CharField(max_length=128)
     travel = models.CharField(max_length=128)
-    image = models.CharField(max_length=50)
+    image = models.ImageField()
     slug = models.SlugField()
 
     def __str__(self):
