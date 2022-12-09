@@ -51,6 +51,7 @@
 }
 
 .crew__selector {
+    z-index: 10;
     display: inline;
     border: none;
     padding: 0;
@@ -85,6 +86,23 @@
         grid-template-rows: 1fr 1fr;
         width: 50%;
         margin: 0 auto;
+    }
+
+    .crew__selector {
+        margin-top: 2rem;
+    }
+    .crew__selector button {
+        position: static;
+    }
+}
+
+@media screen and (max-height: 875px) {
+    .crew__selector {
+        margin-top: 2rem;
+    }
+
+    .crew__selector button {
+        position: static;
     }
 }
 
