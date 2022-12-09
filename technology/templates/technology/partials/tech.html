@@ -2,33 +2,27 @@
 
 <div class="tech__grid">
     <nav class="tech__col1">
-        <button
+        <a href="{% url 'vehicle' %}"
             {% if name == 'launch vehicle' %}
             class="active"
             {% endif %}
         >
-            <a href="{% url 'vehicle' %}">
-                1
-            </a>
-        </button>
-        <button
+            <p>1</p>
+        </a>
+        <a href="{% url 'capsule' %}"
             {% if name == 'space capsule' %}
             class="active"
             {% endif %}
         >
-            <a href="{% url 'capsule' %}">
-                2
-            </a>
-        </button>
-        <button
+            <p>2</p>
+        </a>
+        <a href="{% url 'spaceport' %}"
             {% if name == 'spaceport' %}
             class="active"
             {% endif %}
         >
-            <a href="{% url 'spaceport' %}">
-                3
-            </a>
-        </button>
+            <p>3</p>
+        </a>
     </nav>
     <div class="tech__col2">
         <p class="tech__terms">the terminology...</p>

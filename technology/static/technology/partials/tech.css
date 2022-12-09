@@ -14,12 +14,8 @@
     align-items: center;
 }
 
-nav {
-    
-}
-
-.tech__col1 button {
-    width: 5rem;
+.tech__col1 a {
+    padding: 1.8rem;
     margin: 1rem 0;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
@@ -31,9 +27,18 @@ nav {
     font-size: 2rem;
 
     cursor: pointer;
+    position: relative;
 }
 
-.tech__col1 button.active {
+.tech__col1 a p {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    text-align: center;
+}
+
+
+.tech__col1 a.active {
     background-color: #fff;
     color: black;
 }
